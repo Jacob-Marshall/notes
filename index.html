@@ -2,6 +2,12 @@
 <html lang="en" dir="ltr">
   <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script type="text/javascript">
+    var note = prompt("Enter your note")
+    var myWindow = window.open("", "myWindow", "width=200,height=100");   // Opens a new window
+    myWindow.document.write(note);   // Text in the new window
+    myWindow.opener.document.write("<p>This is the source window!</p>");  // Text in the window that created the new window
+</script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Online sticky notes! No software required!">
     <meta charset="utf-8">
@@ -29,7 +35,7 @@
   <p class="lead">Never forget</p>
   <hr class="my-4">
   <p>Sticky notes uses javascript to make a new window with your note in!</p>
-  <a class="btn btn-primary btn-lg" href="javascript:(function () { var code = prompt("Code here"); document.write(code); })();" role="button">Make a note</a>
+  <a class="btn btn-primary btn-lg" onclick="" role="button">Make a note</a>
 </div>
 
   </body>
