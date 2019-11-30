@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script type="text/javascript">
     function newNote() {var note = prompt("Enter your note")
-    var myWindow = window.open("", "myWindow", "width=200,height=100");   // Opens a new window
+    var myWindow = window.open("", "myWindow", "width=200,height=100").focus();   // Opens a new window
     myWindow.document.write(note);   // Text in the new window
   }
 </script>
@@ -44,7 +44,7 @@
     <hr class="my-4">
     <p><strong>Bookmarklet</strong></p>
     <p>Drag the bookmarklet onto your bookmarks bar and click on it to make a note where ever you are on the web!</p>
-    <a href="javascript:(function()%7Bvar%20note%20%3D%20prompt(%22Enter%20your%20note%22)var%20myWindow%20%3D%20window.open(%22%22%2C%20%22myWindow%22%2C%20%22width%3D200%2Cheight%3D100%22)%3BmyWindow.document.write(note)%7D)()" class="btn btn-primary btn-lg">Make a note</a>  
+    <a href="javascript:(function()%7Bvar%20note%20%3D%20prompt(%22Enter%20your%20note%22)var%20myWindow%20%3D%20window.open(%22%22%2C%20%22myWindow%22%2C%20%22width%3D200%2Cheight%3D100%22)%3BmyWindow.document.write(note)%7D)()" class="btn btn-primary btn-lg">Make a note</a>
   </div>
 </div>
   </body>
