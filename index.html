@@ -26,6 +26,7 @@
   console.log('service worker is not supported');
   }
   </script>
+    <script>
 // service-worker.js
 self.addEventListener('install', function() {
   console.log('Install!');
@@ -36,6 +37,7 @@ self.addEventListener("activate", event => {
 self.addEventListener('fetch', function(event) {
   console.log('Fetch!', event.request);
 });
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Online sticky notes! No software required!">
     <meta charset="utf-8">
@@ -62,7 +64,7 @@ self.addEventListener('fetch', function(event) {
   </div>
 </nav>
 <div class="container" align="centre">
- <img src="carbon.png">
+ <img src="carbon.png" alt="Source code">
   </div>
     <div class="container" align="centre" style="display:none">
         <a href="#content" class="btn btn-primary btn-lg">Learn more</a>
