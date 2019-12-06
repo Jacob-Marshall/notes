@@ -42,6 +42,12 @@
     </div>
   </div>
 </nav>
+      <script>
+      if ('serviceWorker' in navigator) {
+  // sw.js can literally be empty, but must exist
+  navigator.serviceWorker.register('/sw.js');
+}
+    </script>
 <div class="container" align="centre">
  <img src="carbon.png" alt="Source code">
   </div>
