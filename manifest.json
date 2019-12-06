@@ -5,6 +5,7 @@
   "start_url": "jacob-marshall.github.io/notes/index.html",
   "background_color": "#FFFFFF",
   "theme_color": "#007BFF",
+  "display": "standalone"
   "icons": [{
     "src": "icon.png",
     "sizes": "256x256",
