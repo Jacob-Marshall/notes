@@ -1,4 +1,13 @@
 {
-  "short_name": "Notes",
   "name": "Sticky notes",
+  "short_name": "Notes",
+  "description": "Make notes (on | off)line.",
+  "start_url": "jacob-marshall.github.io/notes/index.html",
+  "background_color": "#FFFFFF",
+  "theme_color": "#007BFF",
+  "icons": [{
+    "src": "icon.png",
+    "sizes": "256x256",
+    "type": "image/png"
+  }]
 }
